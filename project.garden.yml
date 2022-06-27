@@ -1,0 +1,12 @@
+kind: Project
+name: airflow-standalone
+environments:
+  - name: local
+
+defaultEnvironment: "local"
+
+providers:
+  - name: local-kubernetes
+    context: minikube
+    environments: [local]
+

@@ -1,0 +1,13 @@
+kind: Module
+type: container
+name: airflow
+description: airflow standalone
+services:
+  - name: airflow
+    ports:
+      - name: http
+        containerPort: 8080
+    ingresses:
+      - path: /
+        port: http
+        #hostname: airflow-192-168-39-190.nip.io

@@ -10,4 +10,3 @@ services:
     ingresses:
       - path: /
         port: http
-        #hostname: airflow-192-168-39-190.nip.io
